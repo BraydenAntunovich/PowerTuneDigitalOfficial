@@ -252,11 +252,11 @@ Rectangle{
                 id:centerbutton
                 visible: needlecentervisisble
                 Rectangle {
-                    width: outerRadius * 0.2
+                    width: outerRadius * 0.1
                     height: width
                     radius: width / 2
-                    color: "black"
-                    border.color:"grey"
+                    color: "darkred"
+                    border.color:"darkred"
                     anchors.centerIn: parent
                 }
             }
