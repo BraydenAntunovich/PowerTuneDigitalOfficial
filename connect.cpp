@@ -805,120 +805,123 @@ void Connect::daemonstartup(const int &daemon)
         daemonstart = "./FordBarraBXCANOBD";
         break;
     case 22:
-        daemonstart = "./FordBarraFG2xCAN";
+        daemonstart = "./FordBarraBXCANOBDCustom";
         break;
     case 23:
-        daemonstart = "./FordBarraFG2XCANOBD";
+        daemonstart = "./FordBarraFG2xCAN";
         break;
     case 24:
-        daemonstart = "./EVOXCAN";
+        daemonstart = "./FordBarraFG2XCANOBD";
         break;
     case 25:
-        daemonstart = "./BlackboxM3";
+        daemonstart = "./EVOXCAN";
         break;
     case 26:
-        daemonstart = "./NISSAN370Z";
+        daemonstart = "./BlackboxM3";
         break;
     case 27:
-        daemonstart = "./GMCANd";
+        daemonstart = "./NISSAN370Z";
         break;
     case 28:
-        daemonstart = "./NISSAN350Z";
+        daemonstart = "./GMCANd";
         break;
     case 29:
-        daemonstart = "./MegasquirtCan";
+        daemonstart = "./NISSAN350Z";
         break;
     case 30:
-        daemonstart = "./EMSCAN";
+        daemonstart = "./MegasquirtCan";
         break;
     case 31:
-        daemonstart = "./WRX2012";
+        daemonstart = "./EMSCAN";
         break;
     case 32:
-        daemonstart = "./M800ADLSet3d";
+        daemonstart = "./WRX2012";
         break;
     case 33:
-        daemonstart = "./Testdaemon";
+        daemonstart = "./M800ADLSet3d";
         break;
     case 34:
-        daemonstart = "./ecoboost";
+        daemonstart = "./Testdaemon";
         break;
     case 35:
-        daemonstart = "./Emerald";
+        daemonstart = "./ecoboost";
         break;
     case 36:
-        daemonstart = "./WolfEMS";
+        daemonstart = "./Emerald";
         break;
     case 37:
-        daemonstart = "./GMCANOBD";
+        daemonstart = "./WolfEMS";
         break;
     case 38:
-        daemonstart = "";
+        daemonstart = "./GMCANOBD";
         break;
     case 39:
-        daemonstart = "./HondataS300";
+        daemonstart = "";
         break;
     case 40:
-        daemonstart = "./genericcan";
+        daemonstart = "./HondataS300";
         break;
     case 41:
-        daemonstart = "./ME13";
+        daemonstart = "./genericcan";
         break;
     case 42:
-        daemonstart = "./FTCAN20";
+        daemonstart = "./ME13";
         break;
     case 43:
-        daemonstart = "./Delta";
+        daemonstart = "./FTCAN20";
         break;
     case 44:
-        daemonstart = "./BigNET";
+        daemonstart = "./Delta";
         break;
     case 45:
-        daemonstart = "./BigNETLamda";
+        daemonstart = "./BigNET";
         break;
     case 46:
-        daemonstart = "./R35";
+        daemonstart = "./BigNETLamda";
         break;
     case 47:
-        daemonstart = "./Prado";
+        daemonstart = "./R35";
         break;
     case 48:
-        daemonstart = "./WRX2016";
+        daemonstart = "./Prado";
         break;
     case 49:
-        daemonstart = "./LifeRacing";
+        daemonstart = "./WRX2016";
         break;
     case 50:
-        daemonstart = "./DTAFast";
+        daemonstart = "./LifeRacing";
         break;
     case 51:
-        daemonstart = "./ProEFI";
+        daemonstart = "./DTAFast";
         break;
     case 52:
-        daemonstart = "./TeslaSDU";
+        daemonstart = "./ProEFI";
         break;
     case 53:
-        daemonstart = "./NeuroBasic";
+        daemonstart = "./TeslaSDU";
         break;
     case 54:
-        daemonstart = "./GR_Yaris";
+        daemonstart = "./NeuroBasic";
         break;
     case 55:
-        daemonstart = "./SyvecsS7";
+        daemonstart = "./GR_Yaris";
         break;
     case 56:
-        daemonstart = "./Rsport";
+        daemonstart = "./SyvecsS7";
         break;
     case 57:
-        daemonstart = "./Generic";
+        daemonstart = "./Rsport";
         break;
     case 58:
-        daemonstart = "./Edelbrock";
+        daemonstart = "./Generic";
         break;
     case 59:
-        daemonstart = "./Boostec";
+        daemonstart = "./Edelbrock";
         break;
     case 60:
+        daemonstart = "./Boostec";
+        break;
+    case 61:
         daemonstart = "./HEFI";
         break;
     }
