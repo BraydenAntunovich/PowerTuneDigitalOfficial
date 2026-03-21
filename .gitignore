@@ -6,3 +6,5 @@ appsettings.cpp.autosave
 *.autosave
 
 .idea/
+
+daemons/FordBarraBXCANOBDCustom
