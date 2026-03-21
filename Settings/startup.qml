@@ -51,7 +51,7 @@ Rectangle {
             width: daemons.width / 3
             height: daemons.height / 15
             font.pixelSize: daemons.width / 55
-            model: ["None", "HaltechV2", "Link Generic Dash", "Microtech", "Consult", "M800 Set1", "OBD2", "Hondata 20Hz", "Adaptronic CAN", "Motec M1", "AEM V2", "AUDI B7", "BRZ FRS 86", "ECU Masters", "Audi B8", "Emtron", "Holley (Racepak)", "MaxxECU", "Ford FG MK1", "Ford FG MK1 + OBD Polling", "Ford BA+BF ", "Ford BA+BF + OBD Polling", "Ford BA+BF + OBD Polling Modified", "Ford FG2x", "Ford FG2x + OBD Polling", "EVO X", "Blackbox M3", "NISSAN 370Z", "GM: LS2-LS7 CAN", "NISSAN 350Z", "Megasquirt CAN Simplified", "EMTECH EMS CAN", "WRX 2008-2015", "Motec Set3 ADL", "Testdaemon", "Ecoboost", "Emerald ECU", "Wolf", "GM OBD-CAN", "Unused", "Hondata 100Hz", "11-Bit CAN", "Motorsport Electronics", "Fueltech", "Delta", "Bigstuff AFR", "Bigstuff Lamda", "R35", "Prado", "WRX 2016", "LifeRacing beta", "DTAFast", "ProEFI", "TeslaSDU", "NeuroBasic" ,"GR Yaris (Beta)","Syvecs S7","RSport","Generic CAN","Edelbrock", "Boostec", "Holley (Standard)"]
+            model: ["None", "HaltechV2", "Link Generic Dash", "Microtech", "Consult", "M800 Set1", "OBD2", "Hondata 20Hz", "Adaptronic CAN", "Motec M1", "AEM V2", "AUDI B7", "BRZ FRS 86", "ECU Masters", "Audi B8", "Emtron", "Holley (Racepak)", "MaxxECU", "Ford FG MK1", "Ford FG MK1 + OBD Polling", "Ford BA+BF", "Ford BA+BF + OBD Polling", "Ford BA+BF + OBD Polling Modified", "Ford FG2x", "Ford FG2x + OBD Polling", "EVO X", "Blackbox M3", "NISSAN 370Z", "GM: LS2-LS7 CAN", "NISSAN 350Z", "Megasquirt CAN Simplified", "EMTECH EMS CAN", "WRX 2008-2015", "Motec Set3 ADL", "Testdaemon", "Ecoboost", "Emerald ECU", "Wolf", "GM OBD-CAN", "Unused", "Hondata 100Hz", "11-Bit CAN", "Motorsport Electronics", "Fueltech", "Delta", "Bigstuff AFR", "Bigstuff Lamda", "R35", "Prado", "WRX 2016", "LifeRacing beta", "DTAFast", "ProEFI", "TeslaSDU", "NeuroBasic" ,"GR Yaris (Beta)","Syvecs S7","RSport","Generic CAN","Edelbrock", "Boostec", "Holley (Standard)"]
             delegate: ItemDelegate {
                 width: daemonselect.width
                 text: daemonselect.textRole ? (Array.isArray(
@@ -91,8 +91,6 @@ Rectangle {
             //Function to automatically change can speeds
             id: autochangecanspeed
             function start() {
-                //if (daemonselect.textAt(daemonselect.currentIndex) == "OBD2"|| daemonselect.textAt(daemonselect.currentIndex) == "AUDI B7"|| daemonselect.textAt(daemonselect.currentIndex) == "BRZ FRS 86"|| daemonselect.textAt(daemonselect.currentIndex) =="Audi B8"|| daemonselect.textAt(daemonselect.currentIndex) == "Barra FG MK1"|| daemonselect.textAt(daemonselect.currentIndex) =="Barra FG MK1 + OBD Polling"||daemonselect.textAt(daemonselect.currentIndex) =="Barra BX "||daemonselect.textAt(daemonselect.currentIndex) =="Barra BX + OBD Polling"||daemonselect.textAt(daemonselect.currentIndex) =="Barra FG2x" || daemonselect.textAt(daemonselect.currentIndex) =="Barra FG2x + OBD Polling"||daemonselect.textAt(daemonselect.currentIndex)== "EVO X Test"||"NISSAN 370Z Test"||daemonselect.textAt(daemonselect.currentIndex) =="GM: LS2-LS7 CAN"||daemonselect.textAt(daemonselect.currentIndex) == "NISSAN 350Z Test")
-                //if (daemonselect.textAt(daemonselect.currentIndex) == "OBD2")
                 switch (daemonselect.textAt(daemonselect.currentIndex)) {
                 case "OBD2":
                     canbitrateselect.currentIndex = 1 // 500 Kbs
@@ -112,10 +110,13 @@ Rectangle {
                 case "Ford FG MK1 + OBD Polling":
                     canbitrateselect.currentIndex = 1 // 500 Kbs
                     break
-                case "Ford BX ":
+                case "Ford BA+BF":
                     canbitrateselect.currentIndex = 1 // 500 Kbs
                     break
-                case "Ford BX + OBD Polling":
+                case "Ford BA+BF + OBD Polling":
+                    canbitrateselect.currentIndex = 1 // 500 Kbs
+                    break
+                case "Ford BA+BF + OBD Polling Modified":
                     canbitrateselect.currentIndex = 1 // 500 Kbs
                     break
                 case "Ford FG2x":

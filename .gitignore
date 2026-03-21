@@ -1,10 +1,94 @@
+# ---------- Build folders ----------
+build/
+build-*/
+out/
+bin/
+obj/
+debug/
+release/
 
-PowertuneQMLGui.pro.user
+# ---------- Compiled binaries ----------
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+*.qm
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*.o
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+*.out
 
+# ---------- Daemon binaries ----------
+daemons/FordBarraBXCANOBDCustom
+
+# ---------- Autosave ----------
+*.autosave
+*.tmp
+*.bak
+*~
+*.swp
+
+# ---------- Logs ----------
+*.log
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.vcxproj.user
+*.opensdf
+*.sdf
+*.suo
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Git ----------
+.gitmodules
+
+# ---------- Config ----------
 appsettings.cpp.autosave
 
-*.autosave
+# ---------- Qt Creator ----------
+CMakeLists.txt.user
+*.creator
+*.creator.user
+*.creator.user.*
+*.files
+*.includes
 
-.idea/
+# ---------- Reverse engineering ----------
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.i64
+*.sqlite
+*.pdb
+*.map
+*.rep
+*.gpr
+*.bndb
 
-daemons/FordBarraBXCANOBDCustom
+# ---------- Package managers ----------
+node_modules/
+
+# ---------- Coverage ----------
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# ---------- Temp ----------
+temp/
+tmp/
